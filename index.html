@@ -1,0 +1,250 @@
+<html>
+    <head>
+        <title>BLOG</title>
+        <link rel = "icon" href ="febalogo.png" type = "image/x-icon">
+        
+            <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+
+
+<style>
+ .button {
+  background-color: #555555; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rainbow-text {
+  /* Create a conic gradient. */
+  /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
+  background: #CA4246;
+  background-color: #CA4246;
+  background: conic-gradient(
+    #CA4246 16.666%, 
+    #E16541 16.666%, 
+    #E16541 33.333%, 
+    #F18F43 33.333%, 
+    #F18F43 50%, 
+    #8B9862 50%, 
+    #8B9862 66.666%, 
+    #476098 66.666%, 
+    #476098 83.333%, 
+    #A7489B 83.333%);
+  
+  /* Set thee background size and repeat properties. */
+  background-size: 57%;
+  background-repeat: repeat;
+  
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  
+  /* Animate the text when loading the element. */
+  /* This animates it on page load and when hovering out. */
+  animation: rainbow-text-animation-rev 0.5s ease forwards;
+
+  cursor: pointer;
+}
+
+/* Add animation on hover. */
+.rainbow-text:hover {
+  animation: rainbow-text-animation 0.5s ease forwards;
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-animation {
+  0% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+}
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-animation-rev {
+  0% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+}
+</style>
+
+    </head>
+    <body>
+        <div class="man" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                         <a class="navbar-brand" href="index.html"><img src="feba.png" width="120px"/></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about us.jsp">ABOUT US</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </nav>    
+        </div>
+        
+        <br>
+        <br>
+
+        
+        <div class="container-fluid" style="background-image: url('https://i.pinimg.com/originals/da/79/ef/da79ef416fb150d86d1a4c3f20055215.jpg')">
+        <div class="container-fluid">
+            <div class="how-section1">
+                <div class="row">
+                    <div class="col-md-8">
+                        <br>
+                        <br>
+                        <br>
+                        
+                        <i class='fas fa-book-reader' style='font-size:12px;color: white;'><span style="color: white;font-family: 'PT Sans', sans-serif"> E-Learning</span></i>
+                        <h4></h4>
+                        <p style="font-size: 32px;color: white;font-family: 'Texturina', serif;">AWS: ML CERTIFICATION COURSE</p>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="col-md-4">
+                        <h3></h3>
+                        
+                    </div>
+                </div>                   
+            </div>
+        </div>
+        </div>
+        
+        
+        <!---------------------------------------------------------------------------->
+        <div class="container-fluid" style="background-color: #F1F1F1">
+            <div class="how-section1" style="margin-left: 20px">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 class="rainbow-text" style="font-weight: 600;width: 9em;">ABOUT COURSE</h3>
+                        
+                        <p style="font-size: 18px;font-family: 'Dosis', sans-serif;"><b>Why This Course ?</b></p>
+                        <p style="font-family: 'PT Sans', sans-serif">Individuals, who would like to be certified in the AWS Machine Learning Specialty exam are only half of the story but to model a real-world Machine Learning problem, respective individuals need to learn hands-on skills elsewhere.</p>
+                        <p style="font-family: 'PT Sans', sans-serif">This course is an effort to fill the gap we see in the market and there is no course in the market today which helps individuals with AWS ML Certification as well as to model real-world Machine Learning problems. Hence this course is full hands-on and simple, crisp one. It helps you to prepare both certifications in AWS ML Specialty exam and to model real-world Machine Learning problems.</p>
+                        
+                       
+                        
+                        
+                        <h2 style="font-size: 18px;font-family: 'Dosis', sans-serif;"><b>Machine learning-Domains</b></h2>
+                        <ul>
+                            <li style="font-family: 'PT Sans', sans-serif;">Domain 1: Data Engineering <a target="_blank" href="https://github.com/febatech/febatech-full-hands-on-aws-ml-certification-course/tree/main/AWS-Cloud-Domains/Domain%201:%20Data%20Engineering">&#128279</a></li>
+                            <li style="font-family: 'PT Sans', sans-serif;">Domain 2: Exploratory Data Analysis <a target="_blank" href="https://github.com/febatech/febatech-full-hands-on-aws-ml-certification-course/tree/main/AWS-Cloud-Domains/Domain%202:%20Exploratory%20Data%20Analysis">&#128279</a></li>
+                            <li style="font-family: 'PT Sans', sans-serif;">Domain 3: Modeling <a target="_blank" href="https://github.com/febatech/febatech-full-hands-on-aws-ml-certification-course/tree/main/AWS-Cloud-Domains/Domain%203:%20Modeling">&#128279</a></li></li> 
+                            <li style="font-family: 'PT Sans', sans-serif;">Domain 4: Machine Learning Implementation and Operations <a target="_blank" href="https://github.com/febatech/febatech-full-hands-on-aws-ml-certification-course/tree/main/AWS-Cloud-Domains/Domain%204:%20Machine%20Learning%20Implementation%20and%20Operations">&#128279</a></li></li>
+                        </ul>
+                        
+                        
+                        <h2 style="font-size: 18px;font-family: 'Dosis', sans-serif;"><b>ML/Deep learning - Models</b></h2>
+                        <ul>
+                            <li style="font-family: 'PT Sans', sans-serif;">House Predictions <a target="_blank" href="https://github.com/febatech/febatech-full-hands-on-aws-ml-certification-course/blob/main/ML-Deep%20Learning-Models/housing-price-prediction.ipynb">&#128279</a></li></li>
+                            <li style="font-family: 'PT Sans', sans-serif;">Wine Classification <a target="_blank" href="https://github.com/febatech/febatech-full-hands-on-aws-ml-certification-course/blob/main/ML-Deep%20Learning-Models/wine-classification-self-explained.ipynb">&#128279</a></li></li>
+                            <li style="font-family: 'PT Sans', sans-serif;">Glass Classification <a target="_blank" href="https://github.com/febatech/febatech-full-hands-on-aws-ml-certification-course/blob/main/ML-Deep%20Learning-Models/glass-classification-self-explained.ipynb">&#128279</a></li></li>
+                            <li style="font-family: 'PT Sans', sans-serif;">Cancer Classification <a target="_blank" href="https://github.com/febatech/febatech-full-hands-on-aws-ml-certification-course/blob/main/ML-Deep%20Learning-Models/Deep_Learning.ipynb">&#128279</a></li></li>
+                        </ul>
+                       
+                     
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="rainbow-text" style="font-weight: 600;width: 13em;">INTRODUCTION VIDEO</h3>
+                        <br>
+                        <iframe src="https://www.youtube.com/embed/C0Phpmtyg8U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+
+                    
+                    </div>
+                </div>                   
+            </div> 
+        </div>
+        
+   <!----------------------------------------------------------------------------------------->
+   <br>
+   <br>
+   <br>
+<div class="container">   
+    <div class="row">
+        <div class="col-md-3">
+            <center><h1><img src="feb.png" width="200px" height="100px" /></h1></center> 
+        </div>
+
+        <h1></h1>
+        <div class="col-md-3">
+            <center> <a href="https://twitter.com/febatech"><img src="https://www.magisto.com/blog/wp-content/uploads/2019/03/Twitter.jpg" width="200px" height="100px"/></a></center>   
+        </div>
+        <h1></h1>
+        <div class="col-md-3">
+            <center><a href="https://www.linkedin.com/company/febatech/"><img src="https://www.comeet.com/resources/wp-content/uploads/2019/03/linkedin-logo.png" width="200px" height="100px"/></a></center> 
+        </div>
+        
+        <div class="col-md-3">
+            <center><a href="https://www.youtube.com/channel/UC8_5ceUU2VcmU5kndTB-rmg"><img src="https://www.freeiconspng.com/thumbs/youtube-logo-png/youtube-logo-png-transparent-image-5.png" width="200px" height="100px"/></a> </center> 
+        </div>
+        <br>
+    </div>                   
+</div>
+   <br>
+
+        
+    </body>
+</html>
