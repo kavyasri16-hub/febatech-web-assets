@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WireFrame WEB app</title>
+<style>
+
+
+
+.header {
+  overflow: hidden;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.header a:hover {
+  background-color: rgb(211, 106, 58);
+  color: black;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+	width: 20%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid rgb(75, 75, 75);
+	box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+	background-color: #2f4780;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 10%;
+}
+</style>
+<head>
+<div class="header">
+	<div class="header-right">
+		<a class="active" href="login-page.html">Home</a>
+		<a href="service.html">Services</a>
+	
+		<a href="contact.html">Contact</a>
+		<a href="about.html">About</a>
+	  </div>
+	<div class="header-left">
+		<img  src="FEBATECH.png"style="width:400px;height:100px;" >
+	  </div>
+	
+  </div>
+</head>
+
+<br></br>
+
+<br></br>
+
+<br></br>
+
+
+<body>
+	<center>
+	<div>
+		<form action="welcome-vpc-eks-netapp-web-page.html" method="get">
+			<div class="container">
+				<label for="uname"><b>UserName</b></label>
+				<br>
+				 <input type="text"
+					placeholder="Enter your username" name="uname" required> <label
+					for="psw"><br>
+					<strong>Password</strong></label> 
+					<br>
+
+					<input type="password"
+					placeholder="Enter your password" name="psw" required>
+<br>
+				<button href= "welcome-vpc-eks-netapp-web-page.html" type="submit">Sign In</button>
+
+			</div>
+
+		</center>
+		</form>
+	</div>
+	</body>
+</html>
