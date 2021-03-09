@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="html">
+<head>
+<meta charset="ISO-8859-1">
+<title>Create VPC</title>
+<style>
+ul {
+	
+	overflow: hidden;
+	
+	list-style-type: none;
+}
+
+li {
+	float: right;
+}
+
+
+
+li a {
+	display: inline;
+	color: black;
+	font-size: 15px;
+	text-align: right;
+	padding: 7px 10px;
+	text-decoration: none;
+	border-right: 1px solid black;
+	color: black;
+	font-size: 20px;
+	text-align: right;
+}
+
+.active {
+	background-color: blue;
+	color: white;
+}
+
+li a:hover {
+	background-color: orange;
+	color: white;
+}
+
+form {
+	text-align: left;
+}
+
+h1 {
+	text-align: center;
+}
+
+body {
+	background-color: lightorange;
+}
+div {
+	background-color: lightgray;
+	color: black;
+		
+}	
+.first{
+width: 60%; 
+
+background-position: center;
+}
+</style>
+
+</head>
+
+
+</head>
+<body>
+	<ul>
+		<li><a href="contact.html">Contact US</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+		<li><a href="service.html">Services</a>
+		<li><a href="login-page.html">Home</a></li>
+	</ul>
+
+	<br>
+<center>
+<div class="first">
+<br>
+<h2 align="left">Create VPC</h2>
+
+<br>
+
+<form action="vpc.py" method="get">
+Name of the stack:
+<input type="text" value="statck">
+<br>
+
+Private SubNets:
+<input type="text" value="Number">
+<br>
+
+Public SubNets:
+<input type="text" value="Number">
+<br>
+
+No. of AZ's:
+<input type="text" value="Number">
+<br>
+VPC CIDR: 
+<input type="text" value="String">
+<br>
+
+Public SubNet01Block: 
+<input type="text" value="String">
+<br>
+
+Public SubNet02Block:
+<input type="text" value="String">
+<br>
+
+Public SubNet02Block:
+<input type="text" value="String">
+<br>
+
+Public SubNet02Block:
+<input type="text" value="String">
+<br>
+<br>
+</div>
+<br>
+</center>
+<center>
+<input type="submit" value="Submit">
+</form>
+</center>
+
+
+
+	
+
+
+
+</body>
+</html>

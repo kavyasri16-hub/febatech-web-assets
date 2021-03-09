@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Create EKS</title>
+<style>
+ul {
+	overflow: hidden;
+	
+	list-style-type: none;
+}
+
+li {
+	float: right;
+}
+
+li a {
+	display: inline;
+	color: black;
+	font-size: 15px;
+	text-align: right;
+	padding: 7px 10px;
+	text-decoration: none;
+	
+	color: black;
+	font-size: 20px;
+	text-align: right;
+}
+
+.active {
+	background-color: blue;
+	color: white;
+}
+
+li a:hover {
+	background-color: orange;
+	color: white;
+}
+
+div {
+	background-color: lightgray;
+	color: black;
+	width: 50%;
+}
+
+.first {
+	width: 60%;
+	background-color: lightgray;
+	background-position: center;
+}
+form{
+ text-align: left;
+}
+</style>
+</head>
+<body>
+	<ul>
+		<li><a href="contact.html">Contact US</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+		<li><a href="service.html">Services</a>
+		<li><a href="login-page.html">Home</a></li>
+	</ul>
+
+	<br>
+	<center>
+		<div>
+			<br>
+			<h5>Create EKS</h5>
+			<form action="EKS.py" method="get">
+				ClusterName: <input type="text" value="statck"> <br>
+
+				VPC CIDR: <input type="text" value="statck"> <br>
+
+				Public SubNet01Block: <input type="text" value="String"> <br>
+				<br> Public SubNet02Block: <input type="text" value="String">
+				<br> Public SubNet01Block: <input type="text" value="String">
+				<br> Public SubNet02Block: <input type="text" value="String">
+				
+				<br><br>
+		</div>
+	</center>
+	<br>
+	<center>
+		<input type="submit" value="Submit">
+		</form>
+</body>
+</html>
