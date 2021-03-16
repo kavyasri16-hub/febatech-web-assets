@@ -6,17 +6,13 @@
 <title>Create VPC</title>
 <style>
 ul {
-	
 	overflow: hidden;
-	
 	list-style-type: none;
 }
 
 li {
 	float: right;
 }
-
-
 
 li a {
 	display: inline;
@@ -52,15 +48,20 @@ h1 {
 body {
 	background-color: lightorange;
 }
+
 div {
 	background-color: lightgray;
 	color: black;
-		
-}	
-.first{
-width: 60%; 
+}
 
-background-position: center;
+.first {
+	width: 60%;
+	background-position: center;
+}
+
+.cancel {
+	text-align: center;
+	
 }
 </style>
 
@@ -77,62 +78,44 @@ background-position: center;
 	</ul>
 
 	<br>
-<center>
-<div class="first">
-<br>
-<h2 align="left">Create VPC</h2>
+	<center>
+		<div class="first">
+			<br>
+			<h2 align="left">Create VPC</h2>
 
-<br>
+			<br>
 
-<form action="vpc.py" method="get">
-Name of the stack:
-<input type="text" value="statck">
-<br>
+			<form action="vpc.py" method="get">
+				Name of the stack: <input type="text" value="statck"> <br>
 
-Private SubNets:
-<input type="text" value="Number">
-<br>
+				Private SubNets: <input type="text" value="Number"> <br>
 
-Public SubNets:
-<input type="text" value="Number">
-<br>
+				Public SubNets: <input type="text" value="Number"> <br>
 
-No. of AZ's:
-<input type="text" value="Number">
-<br>
-VPC CIDR: 
-<input type="text" value="String">
-<br>
+				No. of AZ's: <input type="text" value="Number"> <br>
+				VPC CIDR: <input type="text" value="String"> <br>
 
-Public SubNet01Block: 
-<input type="text" value="String">
-<br>
+				Public SubNet01Block: <input type="text" value="String"> <br>
 
-Public SubNet02Block:
-<input type="text" value="String">
-<br>
+				Public SubNet02Block: <input type="text" value="String"> <br>
 
-Public SubNet02Block:
-<input type="text" value="String">
-<br>
+				Public SubNet02Block: <input type="text" value="String"> <br>
 
-Public SubNet02Block:
-<input type="text" value="String">
-<br>
-<br>
-</div>
-<br>
-</center>
-<center>
-<input type="submit" value="Submit">
-</form>
-</center>
+				Public SubNet02Block: <input type="text" value="String"> <br>
+				<br>
+		</div>
+		<br>
+	</center>
+	<center>
+		<input type="submit" value="Submit">
 
-
-
-	
-
-
-
+		</form>
+	</center>
+	<center>
+	<br>
+		<form class="cancel" action="vpc-netapp-page.html" method="get">
+			<button type="submit">Cancel</button>
+		</form>
+	</center>
 </body>
 </html>
