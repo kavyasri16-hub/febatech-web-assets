@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+.header {
+  background-color:rgb(255, 255, 255);
+}
+.header a {
+  color: black;
+  font-size: 18px;
+}
+
+footer {
+  position: absolute;
+    bottom: 0;
+    width: 1670px;
+
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: #6dc9ee;
+    color: rgb(0, 0, 0);
+}
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+       h1 {text-align: center;}
+
+        </style>
+    <script>
+        function foo() {
+   document.getElementById("demo").innerHTML = "Your request is being processed";
+   document.getElementById("demo_1").innerHTML = " ";
+        }
+        function doo() {
+   document.getElementById("demo_2").innerHTML = "Your request is being processed";
+   document.getElementById("demo_3").innerHTML = " ";
+        }
+
+    </script>
+</head>
+
+<body>
+<center>
+      <div class="header">
+            <img src="{{url_for('static', filename='logo.jpeg')}}" align="left" />
+            <img src="{{url_for('static', filename='logo.jpeg')}}" align="right" />
+
+
+
+    </div>
+<br><br><br>
+  <h1>Axis Tax Services</h1>
+
+<br><br>
+{#     <form method="POST" action="/">#}
+{#    <p>Enter the Path of the folder : </p>#}
+{#	 <input type="text" name="txtUserName" id="txtUserName" value="" placeholder="Enter the Path of the folder"/>#}
+{#      <input type="submit" value ="Click here to upload the folder to S3" onclick="foo();" />#}
+{#         <br>#}
+{#         <p id="demo"></p>#}
+{#     <p id = "demo_1">Folder uploaded successfully</p>#}
+<br><br><br><br>
+
+
+
+         <form method="POST" action="/dropdown">
+
+
+
+
+
+
+             <p1>Select your file: </p1>
+
+         <select name="file">
+      <option value="{{files[0]}}" selected>{{files[0]}}</option>
+      {% for colour in files[1:] %}
+        <option value="{{colour}}">{{colour}}</option>
+      {% endfor %}
+        </select>
+      <input type="submit" value ="Click here to download the file" onclick="doo();" />
+     <br>
+
+         <p>All files uploaded successfully in the bucket.</p>
+         <p id="demo_2"></p>
+     <p id = "demo_3">Downloadable Link for the {{ value_1 }} file : <a href="{{ value }}">{{ value }}</a></p>
+
+     </form>
+    </center>
+    <footer>
+      <p>© Copyright 2021 Axis Tax Services All rights reserved. Developed by Feba Technologies</p>
+
+</footer>
+</body>
+
+</html>
+
+

@@ -1,0 +1,5 @@
+aws_access_key_id = 'AKIAWNP3YJW3X4E4R5MF'
+aws_secret_access_key = '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'
+default_region_name = 'ap-south-1'
+default_output_format = 'json'
+bucket_name = 'axis-tax-drive'
