@@ -2,6 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { navigate } from "gatsby"
 import { isLoggedIn } from "../utils/auth"
+import { isSignedUp } from "../utils/auth"
+
 
 const PrivateRoute = ({ component: Component, location, ...rest }) => {
   if (!isLoggedIn() && location.pathname !== `/app/login`) {
@@ -9,6 +11,9 @@ const PrivateRoute = ({ component: Component, location, ...rest }) => {
     navigate(`/app/login`)
     return null
   }
+/*   else (!isSignedUp() && location.pathname !== `/app/signup`); {
+    navigate(`/app/signup`)
+  } */
 
   return <Component {...rest} />
 }

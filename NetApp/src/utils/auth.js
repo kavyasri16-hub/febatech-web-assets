@@ -18,16 +18,23 @@ export const handleLogin = ({ username, password }) => {
       email: `manogna@febatech.com`,
     })
   }
-
   return false
 }
-
 export const isLoggedIn = () => {
   if (!isBrowser) return false
 
   const user = getUser()
 
   return !!user.email
+}
+export const isSignedUp = () => {
+  if (!isBrowser) return false
+
+  const user = setUser()
+
+  return !!user.username, user.email
+  
+
 }
 
 export const getCurrentUser = () => isBrowser && getUser()
